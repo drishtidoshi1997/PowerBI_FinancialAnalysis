@@ -11,7 +11,7 @@ Interactive **Power BI dashboard** for monitoring loan portfolio performance, de
 
 | Loan Default & Overview | Demographic & Financial Profile |
 |:-----------------------:|:-------------------------------:|
-| ![Customer Dashboard](Customer%20Dashboard.png) | ![Applicants Demographic](Applicants%20Demographic%20and%20Financial%20Profile.png) |
+| ![Loan Default and Overview](Loan%20Default%20and%20Overview.png) | ![Applicants Demographic and Financial Profile](Applicants%20Demographic%20and%20Financial%20Profile.png) |
 
 *Click images to enlarge.*
 
@@ -56,10 +56,9 @@ Key columns: `LoanAmount`, `CreditScore`, `EmploymentType`, `Education`, `Marita
 ├── Meta Data Loan.xlsx                   # Column definitions and metadata
 ├── LoanTable.sql                          # SQL extraction script
 ├── loan.pbix                               # Power BI dashboard file
-├── Customer Dashboard.png                  # Sales dashboard preview
+├── Loan Default and Overview.png           # Loan default dashboard preview
 ├── Applicants Demographic and Financial Profile.png  # Demographic dashboard preview
 └── README.md                                # This file
 ```
----
 
 **#PowerBI #DAX #SQL #CreditRisk #LoanDefault #DataAnalytics #Dashboard**
