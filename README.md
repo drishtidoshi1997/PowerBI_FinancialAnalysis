@@ -1,5 +1,3 @@
-# Power-BI_Financial-Analysis
-
 # 📉 Loan Default & Portfolio Overview Dashboard
 
 [![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=flat-square&logo=powerbi&logoColor=black)](https://powerbi.microsoft.com/)
@@ -13,7 +11,9 @@ Interactive **Power BI dashboard** for monitoring loan portfolio performance, de
 
 | Loan Default & Overview | Demographic & Financial Profile |
 |:-----------------------:|:-------------------------------:|
-| ![Loan Default Overview](images/loan_default_overview.png) | ![Demographic Profile](images/demographic_profile.png) |
+| ![Customer Dashboard](Customer%20Dashboard.png) | ![Applicants Demographic](Applicants%20Demographic%20and%20Financial%20Profile.png) |
+
+*Click images to enlarge.*
 
 ---
 
@@ -31,44 +31,35 @@ Interactive **Power BI dashboard** for monitoring loan portfolio performance, de
 
 ## 🛠️ Tech Stack
 
-- **Data Extraction:** SQL (T-SQL), SQL Server Management Studio
+- **Data Extraction:** SQL (T-SQL), SQL Server Management Studio – [`LoanTable.sql`](./LoanTable.sql)
 - **Data Transformation:** Power BI Dataflows (M language)
-- **Data Modeling & Visualization:** Power BI Desktop (DAX measures)
+- **Data Modeling & Visualization:** Power BI Desktop (DAX measures) – [`loan.pbix`](./loan.pbix)
 - **Data Refresh:** Power BI Service (scheduled refresh)
 
 ---
 
 ## 📁 Dataset
 
-The dataset contains **18 fields** describing borrower demographics, loan characteristics, and repayment behavior. Key columns:
+The dataset contains **18 fields** describing borrower demographics, loan characteristics, and repayment behavior.
 
-- `LoanAmount`, `CreditScore`, `EmploymentType`, `Education`, `MaritalStatus`, `LoanPurpose`, `Default`, `Loan Date`
+- **Raw Data:** [`Loan.csv.gz`](./Loan.csv.gz) (compressed CSV)
+- **Metadata:** [`Meta Data Loan.xlsx`](./Meta%20Data%20Loan.xlsx) – column definitions and data dictionary
 
-📎 [`Loan.xlsx`](./Loan.xlsx) – Raw data with full metadata and column definitions.
+Key columns: `LoanAmount`, `CreditScore`, `EmploymentType`, `Education`, `MaritalStatus`, `LoanPurpose`, `Default`, `Loan Date`
 
 ---
 
 ## 📂 Repository Structure
 
 ```
-├── Loan.xlsx                 # Raw dataset
-├── SQL_queries.sql           # Data extraction scripts
-├── dashboard.pbix            # Power BI file (available on request)
-├── images/
-│   ├── loan_default_overview.png
-│   └── demographic_profile.png
-└── README.md
+├── Loan.csv.gz                           # Raw loan dataset (compressed)
+├── Meta Data Loan.xlsx                   # Column definitions and metadata
+├── LoanTable.sql                          # SQL extraction script
+├── loan.pbix                               # Power BI dashboard file
+├── Customer Dashboard.png                  # Sales dashboard preview
+├── Applicants Demographic and Financial Profile.png  # Demographic dashboard preview
+└── README.md                                # This file
 ```
-
----
-
-## 🚀 Getting Started
-
-1. Clone the repository.
-2. Open `Loan.xlsx` to explore the data.
-3. Load the data into Power BI Desktop or connect to your own SQL database using the provided scripts.
-4. Request the `.pbix` file for the complete interactive dashboard.
-
 ---
 
 **#PowerBI #DAX #SQL #CreditRisk #LoanDefault #DataAnalytics #Dashboard**
